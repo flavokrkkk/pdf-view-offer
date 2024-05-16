@@ -1,0 +1,58 @@
+.offer__wrapper {
+  padding: 20px;
+  height: 100vh;
+  margin: 0 auto;
+  /* ширина контейнера под которым сидит iframe со скроллбаром*/
+  max-width: 430px;
+  border: 1px solid gray;
+}
+
+.offer__title {
+  text-align: start;
+  margin: 0px 0px 20px 10px;
+}
+
+.frame {
+  overflow: hidden;
+  /* подгоняем ширину iframe чтобы не было видно скроллбара pdf */
+  width: 395px;
+  margin: 0 auto;
+  /* статическая height (обязательно заменить)*/
+  height: 2700px;
+  object-fit: contain;
+  border: none;
+}
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+.offer__pdf-wrapper {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 480px;
+  /* ставим скролл на div, чтобы не зависеть от скроллбара самой pdf */
+  overflow: auto;
+}
+
+.offer__wrapper-button {
+  text-align: center;
+}
+
+.offer__arrow {
+  margin: 0px 15px 3px 0px;
+}
+
+.offer__label {
+  display: flex;
+}
+
+.offer__input-checkbox {
+  margin: 0px 10px 90px 0px;
+}
+
+.offer__span {
+  color: rgb(255, 115, 0);
+}
