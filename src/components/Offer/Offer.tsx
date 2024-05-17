@@ -1,7 +1,7 @@
 import { FC, useEffect, useRef, useState } from "react";
 import "./styles.css";
 import arrow from "../../static/arrow.png";
-import pdf from "../../mockData/Confidential.pdf";
+import pdf from "../../mockData/parsePdf.pdf";
 
 const Offer: FC = () => {
   const [isDisabled, setIsDisabled] = useState<boolean>(true);
@@ -29,7 +29,7 @@ const Offer: FC = () => {
         () => handleScroll
       );
     };
-  });
+  }, []);
 
   return (
     <div className="offer__wrapper">
